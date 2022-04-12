@@ -9,16 +9,16 @@ class ProductivitySystem:
 
 class ManagerRole:
     def work(self, hours):
-        print(f'screams and yells for {hours} hours.')
+        return f'screams and yells for {hours} hours.'
 
 class SecretaryRole:
     def work(self, hours):
-        print(f'expends {hours} hours doing office paperwork.')
+        return f'expends {hours} hours doing office paperwork.'
 
 class SalesRole:
     def work(self, hours):
-        print(f'expends {hours} hours on the phone.')
+        return f'expends {hours} hours on the phone.'
 
 class FactoryRole:
     def work(self, hours):
-        print(f'manufactures gadgets for {hours} hours.')
+        return f'manufactures gadgets for {hours} hours.'
