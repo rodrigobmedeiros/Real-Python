@@ -28,6 +28,7 @@ class _EmployeeDatabase:
             },
         }
 
+    @property
     def employees(self):
 
         return [Employee(id_) for id_ in sorted(self._employees)]
@@ -60,3 +61,7 @@ class Employee(AsDictionaryMixin):
         return self._payroll.calculate_payroll()
 
 _employee_database = _EmployeeDatabase()
+
+def employees():
+
+    return _employee_database.employees
